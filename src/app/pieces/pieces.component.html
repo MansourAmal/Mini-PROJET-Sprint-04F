@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <h3>Liste des pièces</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Auteur</th>
+                        <th>Date de Création</th>
+                        
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let piece of pieces">
+                        <td>{{ piece.idPieceth }}</td>
+                        <td>{{ piece.nomPieceth }}</td>
+                        <td>{{ piece.auteurPieceth }}</td>
+                        <td>{{ piece.dateCreation | date:'dd/MM/yyyy' }}</td>               
+                      
+                      
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
